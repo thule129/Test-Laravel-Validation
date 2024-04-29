@@ -9,10 +9,14 @@
     Title:
     <br />
     <input type="text" name="title" />
+    <br>
+    {{ $errors->first('title') }}
     <br /><br />
     Description:
     <br />
     <input type="text" name="description" />
+    <br>
+    {{ $errors->first('description') }}
     <br /><br />
     <button type="submit">Save</button>
 </form>
