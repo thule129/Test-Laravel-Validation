@@ -39,6 +39,6 @@ class Uppercase implements Rule
      */
     public function message()
     {
-        return 'The :attribue does not start with an uppercased letter';
+        return 'The :attribute does not start with an uppercased letter';
     }
 }
