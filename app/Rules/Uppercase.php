@@ -25,7 +25,11 @@ class Uppercase implements Rule
      */
     public function passes($attribute, $value)
     {
-        //
+        $firstLetter = substr($value, 0, 1);
+        if (strtoupper($firstLetter) !== $firstLetter) {
+            return false;
+        }
+        return true;
     }
 
     /**
@@ -35,15 +39,6 @@ class Uppercase implements Rule
      */
     public function message()
     {
-        return 'The validation error message.';
-    }
-
-    public function validate(string $attribute, mixed $value, \Closure $fail): void
-    {
-
-        $firstLetter = substr($value, 0, 1);
-        if (strtoupper($firstLetter) !== $firstLetter) {
-            $fail('The :attribue does not start with an uppercased letter');
-        }
+        return 'The :attribue does not start with an uppercased letter';
     }
 }

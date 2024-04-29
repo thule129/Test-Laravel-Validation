@@ -10,13 +10,13 @@
     <br />
     <input type="text" name="title" />
     <br>
-    {{ $errors->first('title') }}
+    {{ $errors->first('title') ?? '' }}
     <br /><br />
     Description:
     <br />
     <input type="text" name="description" />
     <br>
-    {{ $errors->first('description') }}
+    {{ $errors->first('description') ?? ''}}
     <br /><br />
     <button type="submit">Save</button>
 </form>
