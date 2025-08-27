@@ -3,9 +3,10 @@
 namespace App\Rules;
 
 use Closure;
-use Illuminate\Contracts\Validation\ValidationRule;
+use Illuminate\Contracts\Validation\Rule;
 
-class Uppercase implements ValidationRule
+class Uppercase implements Rule
+// class Uppercase implements ValidationRule
 {
     /**
      * Run the validation rule.
