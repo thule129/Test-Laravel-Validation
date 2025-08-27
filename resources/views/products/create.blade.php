@@ -10,7 +10,7 @@
     {{-- {{ $message }} --}}
     {{-- @endDirective --}}
     @error('name')
-        {{ $errors->get('name') }}
+        {{ $errors->get('name')->first() }}
     @enderror
     <br /><br />
     <button type="submit">Save</button>
