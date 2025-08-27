@@ -21,9 +21,9 @@ class Uppercase implements Rule
     public function passes($attribute, $value)
 
     {
+        $first_letter = substr($value, 0, 1);
 
-        return strtoupper($value) === $value;
-
+        return strtoupper($first_letter) === $first_letter;
     }
 
 
