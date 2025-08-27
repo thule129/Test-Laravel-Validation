@@ -42,7 +42,7 @@ class Uppercase implements Rule
 
     {
 
-        return 'he :attribute does not start with an uppercased letter';
+        return 'The :attribute does not start with an uppercased letter';
 
     }
 }
